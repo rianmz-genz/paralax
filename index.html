@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paralax</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="atas"></div>
+        <img src="background.png" class="layer1">
+        <img src="meteor.png" class="layer2">
+        <div class="layer3">
+            <h1>Hello &amp; Welcome</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, sunt accusantium harum, cum omnis numquam corrupti corporis tenetur nesciunt aperiam nostrum minima voluptate, dolore nemo? Velit iure ab cum neque!</p>
+            <a href="#teks">Get Started</a>
+        </div>
+        <img src="4.png" class="layer4">
+        <img src="5.png" class="layer5">
+        <img src="6.png" />
+    </div>
+    <div class="content" id="teks">
+        <h1>Paralax Effect</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, velit numquam eius voluptatum hic asperiores enim. Rem perferendis error totam non. Nemo similique dolorem repellat, in doloremque fuga aliquid quasi.
+        Eveniet et dignissimos quasi ipsam laborum. Quia tenetur labore dolorem neque, earum accusantium unde, ex nemo, error optio sunt reiciendis aliquam? Assumenda culpa consequuntur blanditiis corrupti deleniti et est ea!
+        Quis harum esse tempore provident quos. Recusandae qui laboriosam, perspiciatis autem atque voluptate nostrum consectetur vero? Officiis quidem pariatur facere, dolor reprehenderit temporibus similique illum, qui autem, debitis aperiam aspernatur.
+        Iusto aut nobis ex autem adipisci accusantium at magni optio consequuntur aliquid? Ad nostrum corrupti obcaecati dicta tenetur ea, molestias quas minima, saepe pariatur eveniet laudantium vel voluptates error minus.
+        Placeat iusto quo nam, repellat illum labore, beatae corrupti iste, neque non soluta. Quibusdam iusto eaque, magnam dicta earum rem ratione ipsum praesentium explicabo et, nihil hic! Porro, dicta voluptates!
+        Natus aperiam nihil deserunt neque, voluptate dolore saepe quam voluptates, iure quia error perspiciatis similique impedit velit et nisi esse facilis dignissimos illo consectetur. Eveniet rem deserunt et architecto distinctio!
+        Molestias assumenda veniam sint, est deleniti repellendus quaerat, aut laboriosam voluptatem, facilis eius ratione voluptates odit! Provident, pariatur consectetur! Facere consectetur minus rerum laudantium ipsam voluptate in quisquam aspernatur molestias?
+        Quae ut quia autem itaque voluptatum maiores aliquam nulla est saepe ab voluptas nihil, odio minima quaerat sed amet, a expedita, praesentium explicabo doloremque! Incidunt ad eveniet ea nesciunt culpa.
+        Perspiciatis saepe aspernatur mollitia amet assumenda, unde, itaque ex impedit, vitae iste ea? Recusandae unde modi beatae, numquam nihil quas qui facilis totam maxime pariatur dolores quia autem adipisci in?
+        Eos sunt asperiores ipsa laudantium odio minus, expedita consectetur officia aliquam quam, corrupti fugit aut vel quo nobis necessitatibus facilis omnis deleniti soluta nam quos quia eligendi aspernatur. Maxime, et?</p>
+    </div>
+    <script type="text/javascript">
+
+        let layersatu = document.querySelector('.layer1');
+        let layerdua = document.querySelector('.layer2');
+        let layertiga = document.querySelector('.layer3');
+        let layerempat = document.querySelector('.layer4');
+        let layerlima = document.querySelector('.layer5');
+
+
+        window.onscroll = function(){
+            let Y = window.scrollY;
+
+            layersatu.style.transform = 'translateY('+Y/1.5+'px)';
+            layerdua.style.transform = 'translateY('+Y/2+'px)';
+            layertiga.style.transform = 'translateY('+Y/1.5+'px)';
+            layerempat.style.transform = 'translateY('+Y/2+'px)';
+            layerlima.style.transform = 'translateY('+Y/3+'px)';
+        }
+    </script>
+</body>
+</html>
